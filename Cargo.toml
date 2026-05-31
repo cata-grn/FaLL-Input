@@ -8,12 +8,15 @@ license = "Apache-2.0"
 publish = false
 
 [dependencies]
+# Librărie esențială care suprascrie fizic memoria RAM cu zero la distrugerea variabilelor
 zeroize = { version = "1.7", features = ["derive"] }
+
+# Librărie de înaltă precizie pentru măsurarea milisecundelor biometrice la nivel hardware
 coarse-prof = "0.2"
 
 [profile.release]
-opt-level = 3
-lto = true
-codegen-units = 1
-panic = "abort"
-strip = true
+opt-level = 3        # Optimizare agresivă de viteză (Soft ultra-rapid, zero latență)
+lto = true           # Link-Time Optimization: unifică codul binar pentru a elimina micro-bug-urile
+codegen-units = 1    # Reduce paralelismul la compilare pentru a asigura o verificare formală de 100%
+panic = "abort"      # Auto-distrugere instantanee în RAM în caz de anomalie hardware (Anti-Exploit)
+strip = true         # Șterge toate simbolurile de debug din binarul final (Hackerii nu pot face reverse engineering)
