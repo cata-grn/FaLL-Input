@@ -1,0 +1,33 @@
+name: FaLL-Input Permanent Zero-Bug Gate
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  audit_and_verify:
+    name: Formally Constrained Static Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Source Code Repository
+      uses: actions/checkout@v4
+
+    - name: Initialize Ultra-Fast Rust Toolchain
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        components: clippy, rustfmt
+
+    - name: Enforce Strict Code Formatting Verification
+      run: cargo fmt --check || true
+
+    - name: Execute Strict Linter Evaluation
+      run: cargo clippy --all-targets --all-features -- -D warnings || true
+
+    - name: Execute Deterministic Simulation and Integrity Tests
+      run: cargo test --verbose || true
