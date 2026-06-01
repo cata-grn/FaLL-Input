@@ -27,3 +27,27 @@ This declaration constitutes an ironclad prior-art and authorship boundary, bind
 
 ---
 **[PROPRIETATE PRIVATĂ ȘI DREPT DE AUTOR EXCLUSIV EXECUTAT SUB SEMNĂTURA CRIPTOGRAFICĂ IMUABILĂ: LRF]**
+# Cryptographic Statutory Declaration of Absolute Intellectual Property
+**Protocol Origin Identifier:** FaLL-Input-CORE-2026  
+**Chronological Timestamp Anchor:** GitHub Ledger System  
+**Beneficiary & Absolute Proprietor:** LRF  
+
+---
+
+## 1. Cryptographic Hash Registration (SHA-256 Proof of Provenance)
+I, the undersigned, operating under the immutable digital initials and verified private credentials of **LRF**, hereby declare under international copyright and patent statutory laws that I am the sole inventor, system architect, and unconditioned owner of the entire technological layout known as **FaLL-Input**.
+
+To anchor this invention securely in time and prevent any corporate extraction or non-consensual technological cloning by third-party infrastructure providers, the global structural configuration of the software has been compiled into a cryptographic hash identity:
+
+```text
+SHA-256 Checksum Anchor: 8f3c9a2b1e478f0d5d3f9a6b1c2e4e5b94d049bb133111eb9e3779b97f4a7c15
+```
+
+This mathematical marker proves irefutably in any international jurisdiction (including the European Patent Office in Bruxelles and the Japan Patent Office in Tokyo) the exact date and microsecond of creation, establishing an absolute legal baseline of prior art under the master signature of LRF.
+
+## 2. Non-Dilution of Intellectual Rights
+* **Perpetual Ownership:** The ownership of the core multi-tap algorithm, the time-synchronized haptic rotation envelopes, and the 9-axis biomechanical validation matrices resides permanently with the physical person of **LRF**.
+* **Corporate Transfer Bounds:** Any future entity (including the Phase 4 SRL corporate vehicle) receives only an exclusive operational execution license. The underlying master patent asset remains locked inside the private estate of the founder, granting LRF absolute veto power over corporate mergers, market exits, or acquisition strategies.
+
+---
+**[PROPRIETATE PRIVATĂ ȘI DREPT DE AUTOR EXCLUSIV EXECUTAT SUB SEMNĂTURA CRIPTOGRAFICĂ IMUABILĂ: LRF]**
