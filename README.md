@@ -57,4 +57,18 @@ cargo test
 ```
 
 ---
-**[PROPRIETATE PRIVATĂ ȘI DREPT DE AUTOR EXCLUSIV EXECUTAT SUB SEMNĂTURA CRIPTOGRAFICĂ IMUABILĂ: LRF]**
+# FaLL-Input (Framework for Autonomous Stratified Security)
+
+**Principal Architect & Inventor:** LRF  
+**Classification:** Deep-Tech / Polymorphic-Haptic Sequential Input / Core Kernel Hardening  
+**Compiler Directives:** `#![forbid(unsafe_code)]` (Volatile Memory Immunity)
+
+## 1. Executive Technical Summary
+FaLL-Input is an asymmetric, mathematically verified Software Development Kit (SDK) specifically designed to intercept endpoint credential exploits including hardware/software keylogging, screen-scraping, and visual shoulder-surfing. By replacing legacy, standardized QWERTY virtual keyboard layouts with a stack-allocated, 9-zone polymorphic sequential entry matrix, the framework guarantees that cryptographic payloads and seed phrases are never materialized as raw strings in the volatile memory (RAM) of the system.
+
+This protocol is fully aligned with the EU Cyber Resilience Act (CRA), NIS2 infrastructure security mandates, and global accessibility directives for secure tactile biometric entry layouts.
+
+## 2. Low-Level Core Architecture
+## 🛡️ Intellectual Property & Copyright Absolute Node
+**[PROPRIETARY WORK AND SOLE INTELLECTUAL PROPERTY RECONSTITUTED UNDER EXCLUSIVITY CLAUSE: ARCHITECT RUS CATALIN FLORIN — RCF]**
+All baseline cryptographic layouts, Bare-Metal driver toolchains, and mathematical logic proofs remain under the sovereign ownership of the principal inventor. Unauthorized replication, external package injection, or core architecture contamination is strictly restricted under global NIS2 compliance frameworks.
