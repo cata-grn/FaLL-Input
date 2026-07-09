@@ -26,7 +26,7 @@ impl HapticMatrixController {
 
     /// Calculează și generează tiparul haptic unic asociat unei taste pentru minutul curent
     pub fn compute_polymorphic_pattern(&mut self, target_digit: u8, current_timestamp_sec: u64) -> Result<(u32, u32), &'static str> {
-        if target_digit < 1 || target_digit > 9 {
+        if !(1..=9).contains(&target_digit) {
             return Err("FaLL-Haptic Gate: Invalid tactile zone reference.");
         }
 
@@ -49,6 +49,12 @@ impl HapticMatrixController {
     pub fn reset_haptic_registers(&mut self) {
         self.current_time_epoch = 0;
         self.dynamic_seed = 0;
+    }
+}
+
+impl Default for HapticMatrixController {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

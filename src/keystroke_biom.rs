@@ -25,7 +25,7 @@ pub struct AxisMetrics {
 /// Motorul de analiză biometrică alocat integral pe stivă
 #[derive(Zeroize)]
 pub struct BiometricAnalyzer {
-    baseline_template: [u32; 9],
+    baseline_template: [i32; 9],
 }
 
 impl BiometricAnalyzer {
@@ -40,14 +40,20 @@ impl BiometricAnalyzer {
     /// Evaluarea matematică a metricilor capturate împotriva profilului LRF (Prag maxim aberație: 2%)
     pub fn evaluate_input_vector(&self, metrics: &AxisMetrics) -> bool {
         // Calcularea erorii absolute agregate pe axele de timp și presiune
-        let delta_flight = (metrics.flight_time_ms as i32 - self.baseline_template[0] as i32).abs();
-        let delta_hold = (metrics.hold_time_ms as i32 - self.baseline_template[1] as i32).abs();
-        let delta_pressure = (metrics.pressure_raw as i32 - self.baseline_template[2] as i32).abs();
+        let delta_flight = (metrics.flight_time_ms as i32 - self.baseline_template[0]).abs();
+        let delta_hold = (metrics.hold_time_ms as i32 - self.baseline_template[1]).abs();
+        let delta_pressure = (metrics.pressure_raw as i32 - self.baseline_template[2]).abs();
 
         let total_deviation = delta_flight + delta_hold + (delta_pressure / 10);
 
         // Dacă deviația totală cumulată este mai mică decât pragul de toleranță de 2%, vectorul este validat
         total_deviation < 5
+    }
+}
+
+impl Default for BiometricAnalyzer {
+    fn default() -> Self {
+        Self::new()
     }
 }
 
