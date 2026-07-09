@@ -1,5 +1,4 @@
-# FaLL-Input (Framework for Autonomous Layered Security)
-**Architect & Chief Inventor:** RCF  
+# FaLL-Input (Framework for Autonomous Layered Security)  
 **Classification:** Deep-Tech / Haptic-Polymorphic Sequential Input Hardening Engine  
 **Core Enforcement:** `#![forbid(unsafe_code)]` (Rust Memory Immunity)  
 
