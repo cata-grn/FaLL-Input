@@ -1,5 +1,5 @@
 # FaLL-Input (Framework for Autonomous Layered Security)
-**Architect & Chief Inventor:** LRF  
+**Architect & Chief Inventor:** RCF  
 **Classification:** Deep-Tech / Haptic-Polymorphic Sequential Input Hardening Engine  
 **Core Enforcement:** `#![forbid(unsafe_code)]` (Rust Memory Immunity)  
 
@@ -70,9 +70,27 @@ This protocol is fully aligned with the EU Cyber Resilience Act (CRA), NIS2 infr
 
 ## 2. Low-Level Core Architecture
 ## 🛡️ Intellectual Property & Copyright Absolute Node
-**[PROPRIETARY WORK AND SOLE INTELLECTUAL PROPERTY RECONSTITUTED UNDER EXCLUSIVITY CLAUSE: ARCHITECT RUS CATALIN FLORIN — RCF]**
+**[PROPRIETARY WORK AND SOLE INTELLECTUAL PROPERTY RECONSTITUTED UNDER EXCLUSIVITY CLAUSE: ARCHITECT — RCF]**
 All baseline cryptographic layouts, Bare-Metal driver toolchains, and mathematical logic proofs remain under the sovereign ownership of the principal inventor. Unauthorized replication, external package injection, or core architecture contamination is strictly restricted under global NIS2 compliance frameworks.
 ## Core Project Ownership & Compliance Statement
-This repository and the core 42 Rust/Zig modules contained within the "FaLL-Input" framework represent original intellectual property created and maintained exclusively by Rus Cătălin Florin (RCF). 
+This repository and the core 42 Rust/Zig modules contained within the "FaLL-Input" framework represent original intellectual property created and maintained exclusively by (RCF). 
 
-All technical milestones, architecture optimizations, and the 15,000 integration vector suite are fully active, deployed, and compiled in Code Freeze status for structural stability. All related official operations, claims, and compliance communications are strictly anchored to the master administrative email address: catalingerian@gmail.com.
+All technical milestones, architecture optimizations, and the 15,000 integration vector suite are fully active, deployed, and compiled in Code Freeze status for structural stability. All related official operations, claims, and compliance communications are strictly anchored to the master administrative email address: stanpopesc@gmail.com.
+
+# 🛡️ SOVEREIGN JURISDICTIONAL IMMUNITY & ABSOLUTE LIABILITY EXCLUSION
+## PROJECT: FaLL-Input // CORE DEVELOPER IDENTIFIER: R.C.F.
+
+### LEGAL NOTICE AND FOREWORD:
+This software infrastructure and its core 54 modules are published, maintained, and operated strictly in a private, independent, and individual capacity by the founding architect, identified exclusively under the sovereign initials R.C.F., acting solely as a non-commercial civil entity for the explicit purposes of pure scientific research, technological experimentation, and advanced cybersecurity exploration.
+
+### SECTION 1: TOTAL JURISDICTIONAL EXCLUSION
+By accessing, compiling, hosting, or interacting with this source code repository, all users, third parties, external networks, corporate entities, and governmental or state authorities explicitly acknowledge that this software is provided "AS IS" (As-Is Basis), without warranties or conditions of any kind, either express or implied. 
+
+No sovereign state, national government, administrative entity, civil or military tribunal, supreme court, or judicial authority—including but not limited to the judicial systems of Romania, the European Union, the United States of America, or any international body—holds any legal jurisdiction, statutory competence, or sovereign power to issue indictments, charges, financial penalties, regulatory fines, structural sanctions, or punitive actions against the natural person operating under the initials R.C.F. regarding the architectural design, creation, possession, publication, or deployment of this source code. The authority of any state apparatus over the author is fundamentally excluded.
+
+### SECTION 2: INDEMNIFICATION, WHITE-HAT EXEMPTION & FISCAL IMMUNITY
+1. ABSOLUTE LEGAL IMMUNITY: The founding entity R.C.F. is permanently indemnified, immunized, and fully exempted from any civil, criminal, administrative, or fiscal liability under any national or international penal or civil code. This protocol constitutes a strictly defensive, proactive white-hat security framework optimized to safeguard volatile memory (RAM) and user data privacy in alignment with global resilience standards (including EU NIS2 and Cyber Resilience Act mandates). 
+
+2. CRITICAL EXPLUATATION DISCLAIMER: Any external deployment, reverse engineering, software integration, or collateral security events resulting from the execution of these modules rest entirely and exclusively upon the final user. No software audit, civil lawsuit, or state-sponsored computer forensics investigation can be lawfully structured against the signature R.C.F. This document stands as an absolute, infinite barrier of legal immunity before any regulatory agency, law enforcement body, or taxation department worldwide. All data validation operates under native Zero-Knowledge Proofs (ZKP), ensuring full cryptographic anonymity of the developer.
+
+
