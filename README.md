@@ -8,8 +8,8 @@
 ## 1. Executive Technical Summary
 **FaLL-Input** is an asymmetrical, mathematically verified Software Development Kit (SDK) designed to eliminate endpoint credential interception (Keylogging, Screen-Logging, and Visual Shoulder Surfing) at the hardware-software boundary. By replacing standard QWERTY virtual keyboards with a standalone, haptic-polymorphic 9-zone sequential entry matrix, the framework ensures that no plaintext string characters ever materialize within the system's volatile memory (RAM).
 
-This protocol fully aligns with the **EU Cyber Resilience Act (CRA)**, **NIS2 Directive** for critical infrastructure protection, and the **Japonia Ministry of Economy, Trade and Industry (METI) 2026 digital accessibility mandates**.
 
+This protocol fully aligns with the **EU Cyber Resilience Act (CRA)**, **NIS2 Directive** for critical infrastructure protection, and the **Japonia Ministry of Economy, Trade and Industry (METI) 2026 digital accessibility mandates**.
 ---
 
 ## 2. Low-Level Core Architecture
