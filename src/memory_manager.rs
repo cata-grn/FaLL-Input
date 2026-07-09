@@ -48,6 +48,12 @@ impl VolatileMemoryScrubber {
     }
 }
 
+impl Default for VolatileMemoryScrubber {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 /// Implementarea Drop-Safe pentru a garanta ștergerea automată la părăsirea contextului logic
 impl Drop for VolatileMemoryScrubber {
     fn drop(&mut self) {

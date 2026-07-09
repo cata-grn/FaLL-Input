@@ -37,7 +37,7 @@ impl MultiTapEngine {
         }
 
         // Constrângere logică strictă: acceptăm exclusiv zonele tactile numerice 1-9
-        if digit < 1 || digit > 9 {
+        if !(1..=9).contains(&digit) {
             return Err("FaLL-Engine Validation Error: Malformed input digit rejected.");
         }
 
@@ -50,6 +50,12 @@ impl MultiTapEngine {
     /// Returnează starea curentă a vectorului numeric fără a expune datele pe internet
     pub fn fetch_vector_state(&self) -> &[u8] {
         &self.raw_pulses[..self.current_idx]
+    }
+}
+
+impl Default for MultiTapEngine {
+    fn default() -> Self {
+        Self::new()
     }
 }
 
