@@ -74,7 +74,7 @@ All baseline cryptographic layouts, Bare-Metal driver toolchains, and mathematic
 ## Core Project Ownership & Compliance Statement
 This repository and the core 42 Rust/Zig modules contained within the "FaLL-Input" framework represent original intellectual property created and maintained exclusively by (RCF). 
 
-All technical milestones, architecture optimizations, and the 15,000 integration vector suite are fully active, deployed, and compiled in Code Freeze status for structural stability. All related official operations, claims, and compliance communications are strictly anchored to the master administrative email address: stanpopesc@gmail.com.
+All technical milestones, architecture optimizations, and the 15,000 integration vector suite are fully active, deployed, and compiled in Code Freeze status for structural stability. All related official operations, claims, and compliance communications are strictly anchored to the master administrative email address: catalingerianflocatalinflo@gmail.com.
 
 # 🛡️ SOVEREIGN JURISDICTIONAL IMMUNITY & ABSOLUTE LIABILITY EXCLUSION
 ## PROJECT: FaLL-Input // CORE DEVELOPER IDENTIFIER: R.C.F.
