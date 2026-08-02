@@ -88,7 +88,7 @@ FaLL-Input is an asymmetric, mathematically verified Software Development Kit (S
 
 
 ### SECTION 10: MANDATORY ETHICAL COOPERATION AND EXCLUSIVELY DEFENSIVE USE
-## CYBER-CRIME PREVENTION PROTOCOL // FOUNDER SIGNATURE: R.C.F.
+## PROTOCOL // FOUNDER SIGNATURE: R.C.F.
 
 1. EXCLUSIVELY DEFENSIVE (WHITE-HAT) INTENT: This standalone technical asset, consisting of the 54 core source code modules of "FaLL-Input", is engineered, published, and distributed exclusively as a deensive software utility. 
 
