@@ -42,3 +42,7 @@ fn test_biometric_spoof_rejection_on_aberration() {
     let clean_res = evaluation_registry.commit_sensor_frame(&mut malicious_payload);
     assert!(clean_res.is_ok());
 }
+impl Default for BiometricSensorRegistry {
+    fn default() -> Self {
+        Self::new()
+    }
