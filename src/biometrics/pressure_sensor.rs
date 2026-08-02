@@ -47,3 +47,8 @@ impl Drop for PressureSensorDriver {
         self.maximum_allowed_pressure = 0;
     }
 }
+impl Default for PressureSensorDriver {
+    fn default() -> Self {
+        Self::new()
+    }
+}
