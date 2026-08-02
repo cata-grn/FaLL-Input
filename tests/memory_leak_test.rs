@@ -40,3 +40,8 @@ fn test_immediate_memory_zeroization_on_drop() {
     // Statusul trebuie să devină TRUE (Imunitate la atacuri tip Memory Dumping)
     assert!(scrubber.verify_cleanliness_status(), "FaLL-Security Failure: Residual data traces detected in volatile memory layouts.");
 }
+impl Default for StructName {
+    fn default() -> Self {
+        Self::new()
+    }
+}
