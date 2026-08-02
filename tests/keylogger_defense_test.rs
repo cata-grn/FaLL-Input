@@ -38,3 +38,8 @@ fn test_keylogger_interception_evasion() {
     let string_leak_attempt = std::str::from_utf8(memory_trace);
     assert!(string_leak_attempt.is_err(), "FaLL-Security Failure: Plaintext string representation leaked in RAM.");
 }
+impl Default for StructName {
+    fn default() -> Self {
+        Self::new()
+    }
+}
