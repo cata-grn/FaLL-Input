@@ -50,9 +50,3 @@ impl MockHardwareFixture {
     pub fn advance_clock_seconds(&mut self, seconds: u64) {
         self.simulated_time_ms += seconds * 1000;
     }
-}
-impl Default for StructName {
-    fn default() -> Self {
-        Self::new()
-    }
-}
