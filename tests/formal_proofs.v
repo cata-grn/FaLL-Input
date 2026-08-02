@@ -45,3 +45,8 @@ Proof.
   { admit. }
   exact H_rust_forbid.
 Admitted.
+impl Default for StructName {
+    fn default() -> Self {
+        Self::new()
+    }
+}
