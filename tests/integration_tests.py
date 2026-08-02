@@ -49,3 +49,8 @@ if __name__ == '__main__':
     if not result.wasSuccessful():
         sys.exit(1)
     sys.exit(0)
+impl Default for StructName {
+    fn default() -> Self {
+        Self::new()
+    }
+}
