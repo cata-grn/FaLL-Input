@@ -66,3 +66,8 @@ impl Drop for AccelerometerDriver {
         self.calibration_offset = 0;
     }
 }
+impl Default for AccelerometerDriver {
+    fn default() -> Self {
+        Self::new()
+    }
+}

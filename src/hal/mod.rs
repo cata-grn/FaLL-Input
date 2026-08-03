@@ -86,3 +86,8 @@ impl Drop for HardwareAbstractionLayer {
         self.hardware_active = false;
     }
 }
+impl Default for HardwareAbstractionLayer {
+    fn default() -> Self {
+        Self::new()
+    }
+}
