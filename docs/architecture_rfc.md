@@ -1,6 +1,6 @@
 # RFC Draft: The Haptic-Polymorphic Sequential Entry Protocol (HPSEP)
 **Document Category:** Standards Track / Core Infrastructure  
-**Author & Protocol Architect:** LRF  
+**Author & Protocol Architect:** R.C.F  
 **Date:** June 2026  
 **Status:** Active Internet-Draft  
 
@@ -30,10 +30,4 @@ $$\Delta f = (\text{Epoch} \oplus \text{Digit}) \cdot 37 \pmod{150} + 50$$
 ### 2.2 9-Axis Biomechanical Vector Constraints
 Authentication boundaries SHALL compile concurrent spatial-temporal measurements across 9 individual axes: 3-axis accelerometer vector fields, 3-axis gyroscopic distortion angular velocities, pressure threshold ranges, and delta contact/flight durations. Any computational state executing an aggregated variance anomaly exceeding 2% relative to the master LRF baseline configuration SHALL immediately trigger register xor-zeroing sequences.
 
-## 3. Regulatory Compliance & Security Invariants
-* **EU NIS2 Compliance Framework:** Protects critical cross-border transactional services by decoupling identity instantiation from cleartext RAM storage arrays.
-* **EU Cyber Resilience Act (CRA) Security Mandates:** Guarantees structural resistance to remote exploit injections by removing standard operating system high-level virtual keyboard software components.
-* **Japonia METI 2026 Digital Accessibility Invariant:** Uses the clock-fluid ultrasonic haptic ripple layout to afford complete transaction privacy to blind and visually-impaired individuals without graphical assistance.
-
----
-**[PROPRIETATE PRIVATĂ ȘI DREPT DE AUTOR EXCLUSIV EXECUTAT SUB SEMNĂTURA CRIPTOGRAFICĂ IMUABILĂ: LRF]**
+**[PROPRIETATE PRIVATĂ ȘI DREPT DE AUTOR EXCLUSIV EXECUTAT SUB SEMNĂTURA CRIPTOGRAFICĂ IMUABILĂ: R.C.F]**
