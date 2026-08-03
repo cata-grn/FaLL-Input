@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Keylogger interception evasion verification test suite.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 mod common;
 
@@ -13,7 +13,7 @@ use common::MockHardwareFixture;
 
 #[test]
 fn test_keylogger_interception_evasion() {
-    // 1. Inițializarea mediului izolat Sandbox sub parametrii LRF
+    // 1. Inițializarea mediului izolat Sandbox sub parametrii R.C.F.
     let fixture = MockHardwareFixture::setup_sandbox();
     let mut engine = MultiTapEngine::new();
 
@@ -31,8 +31,8 @@ fn test_keylogger_interception_evasion() {
     let memory_trace = engine.fetch_vector_state();
 
     // 4. Validarea Matematică a Imunității: Verificăm că datele sunt doar vectori numerici duri
-    // Un virus caută text ASCII sau caractere alfanumerice. FaLL-Input stochează doar indici de tip u8.
-    assert_eq!(memory_trace[0], 1);
+    // Un virus caută text ASCII sau caractere alfanumerice. FaLL-Input codifică valorile în octeți non-UTF-8 pentru a preveni expunerea ca text.
+    assert_eq!(memory_trace[0], resolved_digit as u8 | 0x80);
     
     // Verificare strictă: bufferul nu are legătură cu tabelele de caractere text standard din sistem
     let string_leak_attempt = std::str::from_utf8(memory_trace);

@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Low-level 3-axis gyroscope hardware data acquisition driver.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -18,7 +18,8 @@ pub struct GyroscopeDriver {
 }
 
 impl GyroscopeDriver {
-    /// Instanțierea unui driver de rotație curat conform standardelor de imunitate LRF
+    /// Instanțierea unui driver de rotație curat conform standardelor de imunitate R.C.F.
+    #[inline]
     pub const fn new() -> Self {
         Self {
             raw_pitch: 0,
@@ -43,8 +44,15 @@ impl GyroscopeDriver {
     }
 
     /// Exportă cadrele unghiulare în format de vector fix pentru analizatorul biometric
-    pub fn read_gyro_axes(&self) -> [i16; 3] {
+    #[inline]
+    pub const fn read_gyro_axes(&self) -> [i16; 3] {
         [self.raw_pitch, self.raw_roll, self.raw_yaw]
+    }
+}
+
+impl Default for GyroscopeDriver {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

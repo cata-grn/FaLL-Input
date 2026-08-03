@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Blind pixel graphics and asynchronous micro-flash geometric renderer.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -24,7 +24,7 @@ pub struct BlindRenderer {
 }
 
 impl BlindRenderer {
-    /// Instanțierea randatorului sub parametrii rigizi de siguranță LRF
+    /// Instanțierea randatorului sub parametrii rigizi de siguranță R.C.F.
     pub const fn new() -> Self {
         Self {
             frame_ready: false,

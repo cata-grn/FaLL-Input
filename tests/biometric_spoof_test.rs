@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Biometric spoofing and credential-theft mitigation verification test suite.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 mod common;
 
@@ -14,13 +14,13 @@ use common::MockHardwareFixture;
 #[test]
 fn test_biometric_spoof_rejection_on_aberration() {
     // 1. Inițializarea infrastructurii de testare izolate în Sandbox
-    let fixture = MockHardwareFixture::setup_sandbox();
+    let _fixture = MockHardwareFixture::setup_sandbox();
     let mut analyzer = VectorAnalyzer::new();
 
     // 2. Simulare atacator: a furat cifrele, dar amprenta lui cinematică pe cele 9 axe este complet greșită
     let mut malicious_payload = SensorFramePayload {
         accel_data: [900, -800, 1500],   // Anomalie masivă de accelerație (mână nesigură sau robot)
-        gyro_data: [-400, 300, 900],     // Răsucire unghiulară total deviată față de tiparul LRF
+        gyro_data: [-400, 300, 900],     // Răsucire unghiulară total deviată față de tiparul R.C.F.
         pressure_raw: 950,               // Apăsare fizică violentă, neconformă cu calibrarea
         temporal_delta: 650,             // Timp de zbor erratic, indicând ezitare sau introducere manuală străină
     };

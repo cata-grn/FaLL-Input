@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Low-level CPU register purging via architectural inline assembly.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 /// Execută epurarea fizică a registrelor CPU generale prin operațiuni logice asimetrice
 #[inline(always)]

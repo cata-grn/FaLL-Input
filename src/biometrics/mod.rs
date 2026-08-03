@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Central orchestration hub for 9-axis biometric sensor registries.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -14,6 +14,8 @@ pub mod gyroscope;
 pub mod pressure_sensor;
 pub mod flight_time;
 pub mod vector_analyzer;
+
+pub use vector_analyzer::VectorAnalyzer;
 
 /// Structura unificată de stocare tranzitorie a senzorilor, izolată pe stivă
 #[derive(Zeroize, Clone, Copy)]
@@ -32,7 +34,8 @@ pub struct BiometricSensorRegistry {
 }
 
 impl BiometricSensorRegistry {
-    /// Instanțierea unui registru curat conform standardelor de imunitate LRF
+    /// Instanțierea unui registru curat conform standardelor de imunitate R.C.F.
+    #[inline]
     pub const fn new() -> Self {
         Self {
             payload_ready: false,
@@ -58,6 +61,12 @@ impl BiometricSensorRegistry {
         frame.gyro_data.zeroize();
         
         Ok(())
+    }
+}
+
+impl Default for BiometricSensorRegistry {
+    fn default() -> Self {
+        Self::new()
     }
 }
 
