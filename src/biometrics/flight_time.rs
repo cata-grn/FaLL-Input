@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! High-precision hardware flight and contact time microsecond biometric counter.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -17,7 +17,8 @@ pub struct FlightTimeCounter {
 }
 
 impl FlightTimeCounter {
-    /// Instanțierea unui cronometru hardware curat sub designul de conformitate LRF
+    /// Instanțierea unui cronometru hardware curat sub designul de conformitate R.C.F.
+    #[inline]
     pub const fn new() -> Self {
         Self {
             press_timestamp_ms: 0,
@@ -48,17 +49,25 @@ impl FlightTimeCounter {
     }
 
     /// Calculează timpul de zbor dintre două evenimente de tastare distincte
-    pub fn calculate_flight_bridge(&self, next_press_ms: u64) -> u32 {
+    #[inline]
+    pub const fn calculate_flight_bridge(&self, next_press_ms: u64) -> Option<u32> {
         if next_press_ms < self.release_timestamp_ms {
-            return 0;
+            None
+        } else {
+            Some((next_press_ms - self.release_timestamp_ms) as u32)
         }
-        (next_press_ms - self.release_timestamp_ms) as u32
     }
 
     /// Resetarea completă a registrelor temporale pentru securitate post-execuție
     pub fn wipe_temporal_metrics(&mut self) {
         self.press_timestamp_ms = 0;
         self.release_timestamp_ms = 0;
+    }
+}
+
+impl Default for FlightTimeCounter {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

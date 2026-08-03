@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Low-level 3-axis accelerometer hardware data acquisition driver.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -18,7 +18,8 @@ pub struct AccelerometerDriver {
 }
 
 impl AccelerometerDriver {
-    /// Instanțierea unui driver inerțial curat conform standardelor de imunitate LRF
+    /// Instanțierea unui driver inerțial curat conform standardelor de imunitate R.C.F.
+    #[inline]
     pub const fn new() -> Self {
         Self {
             raw_x: 0,
@@ -44,8 +45,15 @@ impl AccelerometerDriver {
     }
 
     /// Exportă vectorul pe 3 axe în format matriceal rigid pentru analizatorul biometric
-    pub fn read_clean_axes(&self) -> [i16; 3] {
+    #[inline]
+    pub const fn read_clean_axes(&self) -> [i16; 3] {
         [self.raw_x, self.raw_y, self.raw_z]
+    }
+}
+
+impl Default for AccelerometerDriver {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

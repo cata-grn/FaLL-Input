@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Low-level touchscreen force and pressure sensor data acquisition driver.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -16,7 +16,8 @@ pub struct PressureSensorDriver {
 }
 
 impl PressureSensorDriver {
-    /// Inițializarea unui driver de presiune curat conform standardelor de imunitate LRF
+    /// Inițializarea unui driver de presiune curat conform standardelor de imunitate R.C.F.
+    #[inline]
     pub const fn new() -> Self {
         Self {
             raw_force_value: 0,
@@ -35,8 +36,15 @@ impl PressureSensorDriver {
     }
 
     /// Returnează valoarea calibrată a presiunii pentru procesorul biometric central
-    pub fn read_clean_pressure(&self) -> u16 {
+    #[inline]
+    pub const fn read_clean_pressure(&self) -> u16 {
         self.raw_force_value
+    }
+}
+
+impl Default for PressureSensorDriver {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

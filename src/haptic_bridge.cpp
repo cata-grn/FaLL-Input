@@ -3,7 +3,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Low-level hardware binarization and haptic communication bridge.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 #ifdef __cplusplus
 extern "C" {

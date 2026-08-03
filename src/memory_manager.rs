@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Ephemeral memory scrubbing and pointer isolation module.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 use std::sync::atomic::{AtomicBool, Ordering};
@@ -18,7 +18,7 @@ pub struct VolatileMemoryScrubber {
 }
 
 impl VolatileMemoryScrubber {
-    /// Instanțierea controlerului de memorie sub conformitatea de securitate a lui LRF
+    /// Instanțierea controlerului de memorie sub conformitatea de securitate a lui R.C.F.
     pub const fn new() -> Self {
         Self {
             buffer_reference_active: false,

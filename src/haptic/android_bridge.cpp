@@ -5,7 +5,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Native Android NDK hardware integration bridge.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 #ifdef __cplusplus
 extern "C" {

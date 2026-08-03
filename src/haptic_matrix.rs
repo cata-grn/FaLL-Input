@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Ephemeral clock-synchronized haptic pattern matrix controller.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -16,7 +16,7 @@ pub struct HapticMatrixController {
 }
 
 impl HapticMatrixController {
-    /// Instanțierea controlerului haptic conform specificațiilor de conformitate LRF
+    /// Instanțierea controlerului haptic conform specificațiilor de conformitate R.C.F.
     pub const fn new() -> Self {
         Self {
             current_time_epoch: 0,

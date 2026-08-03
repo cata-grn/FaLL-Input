@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Transient memory leak and residue verification test suite.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 mod common;
 
@@ -33,7 +33,7 @@ fn test_immediate_memory_zeroization_on_drop() {
     assert!(!scrubber.verify_cleanliness_status());
 
     // 3. Executarea operațiunii DROP (Variabila părăsește contextul logic/Este distrusă)
-    active_pointer = None; 
+    let _ = active_pointer.take();
     scrubber.force_immediate_scrub();
 
     // 4. Validarea Matematică a Curățeniei RAM: Verificăm ștergerea totală
