@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Ephemeral clock-driven TOTP synchronization seed generator.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -16,7 +16,7 @@ pub struct HapticTotpGenerator {
 }
 
 impl HapticTotpGenerator {
-    /// Instanțierea generatorului pe stivă cu cheia de entropie master deținută de LRF
+    /// Instanțierea generatorului pe stivă cu cheia de entropie master deținută de R.C.F.
     pub const fn new() -> Self {
         Self {
             secret_key_entropy: 0x5D3F_9A2B_C1E4_78F0, // Valoare de bază pseudo-aleatorie asimetrică

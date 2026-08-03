@@ -1,4 +1,4 @@
-# Core Development Team & Community
+cari# Core Development Team & Community
 
 Our project is backed by a tight-knit community and a dedicated team of engineers:
 

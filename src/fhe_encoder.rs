@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Fully Homomorphic Encryption (FHE) polynomial matrix translation module.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -19,7 +19,7 @@ pub struct FheEncoder {
 }
 
 impl FheEncoder {
-    /// Instanțierea modulului criptografic local sub semnătura de siguranță a lui LRF
+    /// Instanțierea modulului criptografic local sub semnătura de siguranță a lui R.C.F.
     pub const fn new() -> Self {
         Self {
             polynomial_coefficients: [0; POLY_DEGREE],

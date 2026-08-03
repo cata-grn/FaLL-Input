@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! 9-Axis behavioral keystroke dynamics biometric verification engine.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -29,7 +29,7 @@ pub struct BiometricAnalyzer {
 }
 
 impl BiometricAnalyzer {
-    /// Inițializarea analizatorului cu profilul master pre-calculat al lui LRF
+    /// Inițializarea analizatorului cu profilul master pre-calculat al lui R.C.F.
     pub const fn new() -> Self {
         Self {
             // Profil matematic de referință (valori constante de calibrare pe cele 9 axe)
@@ -37,7 +37,7 @@ impl BiometricAnalyzer {
         }
     }
 
-    /// Evaluarea matematică a metricilor capturate împotriva profilului LRF (Prag maxim aberație: 2%)
+    /// Evaluarea matematică a metricilor capturate împotriva profilului R.C.F. (Prag maxim aberație: 2%)
     pub fn evaluate_input_vector(&self, metrics: &AxisMetrics) -> bool {
         // Calcularea erorii absolute agregate pe axele de timp și presiune
         let delta_flight = (metrics.flight_time_ms as i32 - self.baseline_template[0]).abs();

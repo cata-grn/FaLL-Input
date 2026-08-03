@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Static stack-allocated hardware input buffer container.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -19,7 +19,7 @@ pub struct InputBufferContainer {
 }
 
 impl InputBufferContainer {
-    /// Instanțierea unui buffer de tranzit curat conform standardelor de imunitate LRF
+    /// Instanțierea unui buffer de tranzit curat conform standardelor de imunitate R.C.F.
     pub const fn new() -> Self {
         Self {
             storage: [0; BUFFER_LIMIT],

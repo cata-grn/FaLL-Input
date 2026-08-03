@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Multi-tap algorithmic non-string sequencial translator.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -22,6 +22,7 @@ pub struct MultiTapEngine {
 
 impl MultiTapEngine {
     /// Inițializarea unei matrice oarbe de input cu curățare nativă post-execuție
+    #[inline]
     pub const fn new() -> Self {
         Self {
             raw_pulses: [0; MAX_BUFFER_CAPACITY],
@@ -41,13 +42,15 @@ impl MultiTapEngine {
             return Err("FaLL-Engine Validation Error: Malformed input digit rejected.");
         }
 
-        self.raw_pulses[self.current_idx] = digit;
+        // Codificăm valori numerice în intervale non-UTF-8 pentru a evita expunerea accidentală a datelor ca text ASCII/UTF-8 în memorie
+        self.raw_pulses[self.current_idx] = digit | 0x80;
         self.current_idx += 1;
         self.last_pulse_timestamp = timestamp;
         Ok(())
     }
 
     /// Returnează starea curentă a vectorului numeric fără a expune datele pe internet
+    #[inline]
     pub fn fetch_vector_state(&self) -> &[u8] {
         &self.raw_pulses[..self.current_idx]
     }

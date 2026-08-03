@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Pocket stealth mode and proximity hardware integration sensor controller.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
@@ -16,7 +16,8 @@ pub struct PocketModeController {
 }
 
 impl PocketModeController {
-    /// Instanțierea unui configurator de buzunar curat sub parametrii de design ai lui LRF
+    /// Instanțierea unui configurator de buzunar curat sub parametrii de design ai lui R.C.F.
+    #[inline]
     pub const fn new() -> Self {
         Self {
             proximity_sensor_active: false,
@@ -25,6 +26,7 @@ impl PocketModeController {
     }
 
     /// Evaluează starea senzorului hardware de proximitate și oprește ecranul la nivel electric
+    #[inline]
     pub fn evaluate_proximity_state(&mut self, sensor_value_close: bool) -> Result<u8, &'strong str> {
         self.proximity_sensor_active = sensor_value_close;
 
@@ -39,7 +41,8 @@ impl PocketModeController {
     }
 
     /// Verifică dacă driverul HAL are voie să ignore randarea vizuală
-    pub fn is_stealth_execution_enforced(&self) -> bool {
+    #[inline]
+    pub const fn is_stealth_execution_enforced(&self) -> bool {
         self.proximity_sensor_active && self.hardware_screen_power == 0
     }
 }

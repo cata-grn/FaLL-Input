@@ -2,7 +2,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Low-level bare-metal touch digitizer hardware event driver.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 const std = @import("std");
 
@@ -22,7 +22,7 @@ pub const DigitizerDriver = struct {
     raw_touch_buffer: [TOUCH_BUFFER_SIZE]HardwareTouchEvent,
     buffer_index: usize,
 
-    /// Inițializarea statică a driverului sub criteriile de zero-eroare permanentă LRF
+    /// Inițializarea statică a driverului sub criteriile de zero-eroare permanentă R.C.F.
     pub fn init() DigitizerDriver {
         return DigitizerDriver{
             .raw_touch_buffer = [_]HardwareTouchEvent{

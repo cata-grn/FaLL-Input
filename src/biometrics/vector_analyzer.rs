@@ -4,7 +4,7 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! 9-Axis multidimensional biometric vector fusion analyzer and self-destruct gate.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 use crate::biometrics::SensorFramePayload;
@@ -15,13 +15,13 @@ const MAXIMUM_BIOMETRIC_ABERRATION_THRESHOLD: i32 = 20;
 /// Structura centrală a analizatorului vectorial multidimensional, izolată pe stivă
 #[derive(Zeroize)]
 pub struct VectorAnalyzer {
-    // Model de referință rigid stocat ca vector fix de 9 elemente pentru calibrarea LRF
+    // Model de referință rigid stocat ca vector fix de 9 elemente pentru calibrarea R.C.F.
     reference_biometric_profile: [i32; 9],
     system_integrity_compromised: bool,
 }
 
 impl VectorAnalyzer {
-    /// Instanțierea unui analizator de fuziune conform specificațiilor de securitate LRF
+    /// Instanțierea unui analizator de fuziune conform specificațiilor de securitate R.C.F.
     pub const fn new() -> Self {
         Self {
             reference_biometric_profile: [150, 90, 450, 10, -5, 30, 100, 50, -10],
@@ -29,7 +29,7 @@ impl VectorAnalyzer {
         }
     }
 
-    /// Execută fuziunea celor 9 axe și validează identitatea biologică a lui LRF
+    /// Execută fuziunea celor 9 axe și validează identitatea biologică a lui R.C.F.
     pub fn verify_integrity_matrix(&mut self, payload: &SensorFramePayload) -> Result<(), &'static str> {
         if self.system_integrity_compromised {
             return Err("FaLL-Security Gate: Core is locked due to previous anomalies.");
@@ -67,6 +67,12 @@ impl VectorAnalyzer {
         self.reference_biometric_profile.zeroize();
         // Setează indicatorul de compromitere permanent în stivă
         self.system_integrity_compromised = true;
+    }
+}
+
+impl Default for VectorAnalyzer {
+    fn default() -> Self {
+        Self::new()
     }
 }
 

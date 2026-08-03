@@ -2,7 +2,7 @@
 name = "fall_input"
 version = "0.1.0"
 edition = "2021"
-authors = ["LRF"]
+authors = ["R.C.F."]
 description = "Formally verified, haptic-polymorphic multi-tap sequential authentication protocol."
 license = "Apache-2.0"
 publish = false

@@ -4,19 +4,23 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Hardware Abstraction Layer (HAL) for blind touch rendering.
-//! Core Architect & Inventor: LRF (2026)
+//! Core Architect & Inventor: R.C.F. (2026)
 
 use zeroize::Zeroize;
 
+const TOUCH_ZONE_EDGE: u32 = 300;
+const TOUCH_ZONE_FAR_EDGE: u32 = 700;
+
 /// Definirea stărilor structurale de randare ale interfeței FaLL-Input
-#[derive(Zeroize, Clone, Copy, PartialEq)]
+#[derive(Zeroize, Clone, Copy, PartialEq, Default)]
 pub enum DisplayMode {
+    #[default]
     BlindGeometry, // Randare exclusiv geometrică neutră (Puncte/Linii microsecunde)
     PocketStealth, // Ecran complet dezactivat (Tastare direct din buzunar)
 }
 
 /// Coordonate brute citite direct de driverul hardware (Digitizer)
-#[derive(Zeroize, Clone, Copy)]
+#[derive(Zeroize, Clone, Copy, Default)]
 pub struct RawHardwareTouch {
     pub coordinate_x: u32,
     pub coordinate_y: u32,
@@ -32,6 +36,7 @@ pub struct HardwareAbstractionLayer {
 
 impl HardwareAbstractionLayer {
     /// Instanțierea unui modul HAL securizat sub parametrii de design ai lui LRF
+    #[inline]
     pub const fn new() -> Self {
         Self {
             current_mode: DisplayMode::BlindGeometry,
@@ -45,6 +50,7 @@ impl HardwareAbstractionLayer {
     }
 
     /// Interceptează coordonatele tactile brute și le validează geometric (Anti-Tapjacking)
+    #[inline]
     pub fn process_raw_hardware_input(&self, touch: &RawHardwareTouch) -> Result<u8, &'static str> {
         if !self.hardware_active {
             return Err("FaLL-HAL Gate: Digitizer interface is currently locked.");
@@ -52,13 +58,24 @@ impl HardwareAbstractionLayer {
 
         // Mapare geometrică deterministă asimetrică pe cele 9 zone virtuale fixe
         // Evită complet utilizarea de framework-uri UI de nivel înalt (Android View / UIKit)
-        if touch.coordinate_x < 300 && touch.coordinate_y < 300 {
-            Ok(1) // Zona tactilă 1
-        } else if touch.coordinate_x > 700 && touch.coordinate_y > 700 {
-            Ok(9) // Zona tactilă 9
+        Ok(Self::classify_touch_zone(touch.coordinate_x, touch.coordinate_y))
+    }
+
+    #[inline]
+    const fn classify_touch_zone(coordinate_x: u32, coordinate_y: u32) -> u8 {
+        if coordinate_x < TOUCH_ZONE_EDGE && coordinate_y < TOUCH_ZONE_EDGE {
+            1
+        } else if coordinate_x > TOUCH_ZONE_FAR_EDGE && coordinate_y > TOUCH_ZONE_FAR_EDGE {
+            9
         } else {
-            Ok(5) // Zona implicită centrală 5
+            5
         }
+    }
+}
+
+impl Default for HardwareAbstractionLayer {
+    fn default() -> Self {
+        Self::new()
     }
 }
 
