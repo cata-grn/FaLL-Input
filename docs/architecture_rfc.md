@@ -1,6 +1,6 @@
 # RFC Draft: The Haptic-Polymorphic Sequential Entry Protocol (HPSEP)
 **Document Category:** Standards Track / Core Infrastructure  
-**Author & Protocol Architect:** LRF  
+**Author & Protocol Architect:** R.C.F  
 **Date:** June 2026  
 **Status:** Active Internet-Draft  
 

@@ -3,7 +3,6 @@
 
 //! FaLL-Input: Framework for Autonomous Layered Security
 //! Library surface for integration tests and reusable security modules.
-//! Core Architect & Inventor: R.C.F. (2026)
 
 pub mod core_engine;
 pub mod memory_manager;

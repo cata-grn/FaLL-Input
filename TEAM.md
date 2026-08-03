@@ -1,8 +1,10 @@
 cari# Core Development Team & Community
 
-Our project is backed by a tight-knit community and a dedicated team of engineers:
+# 👥 DEVELOPER STRUCTURE & INDEPENDENT FELLOWSHIP
+## PROJECT: FaLL-Input // FOUNDING PRINCIPLE: SOVEREIGN INDIVIDUALITY
 
-*   **Catalin Gerian** - Project Lead / Core Architect
-*   **[engineer catalin]** - Lead Blockchain Engineer (Rust / Smart Contracts)
-*   **[engineer florin]** - Frontend Developer / UI Specialist
-*   **Full Shark 🦈 2X Community** - Core Node Operators and Quality Assurance testers.
+### CORE FOUNDER & ARCHITECT
+R.C.F. – Core Architect & Open‑Source Researcher
+Role: Architectural design, cryptographic modeling, local endpoint state definition, and autonomous maintenance of the 54‑module FaLL‑Input SDK.
+Status: Independent natural person (persoană fizică), operating in a non‑corporate, white‑hat scientific development framework.
+**

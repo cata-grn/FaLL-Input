@@ -16,7 +16,6 @@ FaLL-Input is a technical prototype for hardening input workflows against creden
 - 0.00% copied material; the core architecture is positioned as original work.
 - The design emphasizes a custom signal filter approach, an original biometric fusion method, and a proprietary interpretation of pressure and movement behavior.
 - QUALITY-PERFORMANCE-WHITE ALL-UNIQUE=100%
-- Creator attribution: R.C.F. is the sole author and originator of the conceptual architecture, implementation direction, and documented design narrative.
 
 ## Core ideas
 
@@ -38,14 +37,6 @@ cargo check
 cargo clippy -- -D warnings
 cargo test
 ```
-
-### Current verified status
-
-The project currently passes local verification checks:
-- `cargo test` completed successfully with 3 active tests and 0 failures.
-- `cargo clippy -- -D warnings` completed successfully with no warnings.
-
-This confirms prototype-level correctness and code quality, while also indicating that formal legal review, regulatory certification, and production-scale performance benchmarking are still future steps rather than current claims.
 
 ## Ownership and licensing
 
