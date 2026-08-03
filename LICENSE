@@ -1,42 +1,32 @@
-================================================================================
-FaLL-Input™ COMMERCIAL PROPRIETARY END-USER LICENSE AGREEMENT (EULA)
-DOCUMENT VERSION: 2.0-2026 / CONFIDENTIAL & PROPRIETARY
-COPYRIGHT OWNER / LICENSOR IDENTIFIER: R.C.F. (ALL RIGHTS RESERVED)
-================================================================================
+# **R.C.F. PROPRIETARY LICENSE — VERSION 1.0 (2026)**  
+**Copyright © R.C.F. — All Rights Reserved**
 
-1. DEFINITIONS AND HARDWARE-SOFTWARE BOUNDARY
-(a) "Software" means the "FaLL-Input" Software Development Kit (SDK), including 
-all source code components in Rust, Zig, C++, Assembly, validation suites, and 
-the 15,000 deterministic vectors [dataford.io].
-(b) "Licensor" means the independent creator, identified solely as R.C.F.
-(c) "Licensee" means the specific corporate entity or enterprise purchaser [dataford.io].
-(d) "Execution" or "Integration" means any compiling, building, running, 
-hosting, or calling of the Software binaries within any digital platform [dataford.io].
+## 1. Grant of Rights  
+No rights to use, copy, modify, distribute, integrate, compile, or execute are granted without direct written permission from the author, R.C.F.
 
-2. PROPRIETARY BOUNDARIES & EXPLICIT ANTI-AI SCRAPING CLAUSE
-The Software is strictly proprietary, confidential, and closed-source [dataford.io]. No license 
-is granted for Execution or Integration without a fully paid B2B Commercial SDK 
-License Agreement executed directly by R.C.F. Licensee is strictly prohibited from 
-utilizing the Software, its syntax, or binary structures to train, tune, or 
-test any artificial intelligence models, machine learning architectures, or automated 
-code-generation scrapers [dataford.io]. Unauthorized scraping or indexing constitutes direct 
-intellectual property theft and breach of confidentiality [legislatie.just.ro].
+## 2. Ownership  
+All code, design, architecture, algorithms, documentation, and associated materials are the exclusive property of the author, R.C.F.  
+Any unauthorized use constitutes a copyright infringement.
 
-3. VALID LIMITATION OF LIABILITY & ABSOLUTE "AS IS" DISCLAIMER
-THIS SOFTWARE IS PROVIDED BY THE LICENSOR R.C.F. "AS IS" AND ANY EXPRESS OR IMPLIED 
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY 
-AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE LICENSOR 
-R.C.F. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOSS OF USE, DATA, OR PROFITS; 
-OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER 
-IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
-IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
-SUCH DAMAGE. THE ENTIRE OPERATIONAL AND SECURITY RISK IS BORNE BY THE LICENSEE [legislatie.just.ro].
+## 3. Prohibited Actions  
+Without explicit consent, the following are strictly prohibited:  
+- use of the code in commercial or non-commercial products  
+- copying, redistribution, or publication of the code  
+- modification or creation of derivative works based on the code  
+- integration into software, hardware, or cloud systems  
+- use in AI, machine learning, LLMs, scraping, indexing, or data mining  
+- decompilation, analysis, or reverse engineering
 
-4. GOVERNING LAW AND SEVERABILITY
-This Agreement, its interpretation, and any civil or commercial disputes arising 
-from the use or distribution of the Software shall be governed exclusively by, 
-and construed in accordance with, the substantive laws of Romania [legislatie.just.ro]. If any 
-provision of this license is held invalid or unenforceable by a court of competent 
-jurisdiction, the remaining clauses shall remain in full force and effect [legislatie.just.ro].
-================================================================================
+## 4. Confidentiality  
+The code and documentation are confidential.  
+Any unauthorized disclosure is prohibited.
+
+## 5. Disclaimer  
+The software is provided "AS IS," without warranties of any kind.  
+The author, R.C.F., is not liable for any direct or indirect damages resulting from unauthorized use.
+
+## 6. Governing Law  
+This license is governed by the laws of Romania.  
+The invalidity of any clause does not affect the remainder of the document.
+
+---
