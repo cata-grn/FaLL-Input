@@ -10,3 +10,5 @@ pub mod haptic_matrix;
 pub mod keystroke_biom;
 pub mod hal;
 pub mod biometrics;
+pub mod fhe_encoder;
+pub mod haptic;

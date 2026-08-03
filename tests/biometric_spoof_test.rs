@@ -42,7 +42,28 @@ fn test_biometric_spoof_rejection_on_aberration() {
     let clean_res = evaluation_registry.commit_sensor_frame(&mut malicious_payload);
     assert!(clean_res.is_ok());
 }
-impl Default for BiometricSensorRegistry {
-    fn default() -> Self {
-        Self::new()
-    }
+
+#[test]
+fn self_destruct_on_aberration() {
+    let _fixture = MockHardwareFixture::setup_sandbox();
+    let mut analyzer = VectorAnalyzer::new();
+
+    let aberrant_payload = SensorFramePayload {
+        accel_data: [900, -800, 1500],
+        gyro_data: [-400, 300, 900],
+        pressure_raw: 950,
+        temporal_delta: 650,
+    };
+
+    let first_result = analyzer.verify_integrity_matrix(&aberrant_payload);
+    assert!(
+        first_result.is_err(),
+        "FaLL-Security Failure: The analyzer failed to trigger its self-destruct gate on aberrant input."
+    );
+
+    let second_result = analyzer.verify_integrity_matrix(&aberrant_payload);
+    assert!(
+        second_result.is_err(),
+        "FaLL-Security Failure: The analyzer did not remain locked after the initial self-destruct event."
+    );
+}
