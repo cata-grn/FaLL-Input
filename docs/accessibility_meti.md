@@ -1,7 +1,7 @@
 # Strategic Accessibility & Non-Visual Authentication Report (METI Compliance)
 **Framework Certification Reference:** FaLL-Input-JP-2026  
 **Target Funding Agency:** Ministry of Economy, Trade and Industry (Tokyo / METI - JST ASPIRE)  
-**Lead Invariant Innovator:** LRF  
+**Lead Invariant Innovator:** R.C.F  
 
 ---
 
