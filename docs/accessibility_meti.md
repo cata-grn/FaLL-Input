@@ -19,7 +19,7 @@ The Japanese Ministry of Economy, Trade and Industry enforces rigid accessibilit
 
 ---
 ## 3. Executive Funding Validation
-**FaLL-Input** bridges the gap between high-level cyber defense and digital accessibility. By validating that a retro-cybersecurity interface can serve as an assistive asset for visually impaired individuals, the protocol stands out as an uncontested candidate for Japanese Deep-Tech suveranity funding, locking an absolute evaluation score at the METI panel under the master authority of **LRF**.
+**FaLL-Input** bridges the gap between high-level cyber defense and digital accessibility. By validating that a retro-cybersecurity interface can serve as an assistive asset for visually impaired individuals, the protocol stands out as an uncontested candidate for Japanese Deep-Tech suveranity funding, locking an absolute evaluation score at the METI panel under the master authority of **R.C.F**.
 
 ---
 **[PROPRIETATE PRIVATĂ ȘI DREPT DE AUTOR EXCLUSIV EXECUTAT SUB SEMNĂTURA CRIPTOGRAFICĂ IMUABILĂ: LRF]**
